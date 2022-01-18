@@ -6,6 +6,7 @@
   padding: 10px 20px;
   font-weight: 500;
   border: 0;
+  margin: auto;
 }
 
 .Signup-button:hover {
@@ -20,6 +21,7 @@
   font-size: 12px;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
   width: 300px;
+  margin: auto;
 }
 
 .Cat-card-picture img {
@@ -37,4 +39,43 @@
 .Cat-card-body {
   padding: 12px;
   line-height: 1em;
+}
+
+.img-container {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px auto;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  border: 5px solid orange;
+  background-position: 50% 50%;
+  background-size: cover;
+  overflow: hidden;
+
+}
+
+.image .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 32px;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  position: relative;
+  bottom: -200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image:hover .overlay{
+  bottom: 0px;
+  transition: bottom 1s ease;
 }
